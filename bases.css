@@ -502,18 +502,123 @@ body{
 }
 
 .rating-title{
-    font-family: 'PT Sans';
+    font-family: 'Helvetica';
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
     line-height: 83px;
-    padding-left: min(187px, 10%);
+    padding-left: min(32px, 10%);
     color: #000000;
     padding-top: 33px;
+    padding-left: 220px;
 }
 
 .main-container{
+    display: flex;
     min-width: 75%;
     min-height: 1300px;
-    margin: 0 auto;
+    margin:  0 187px 0 187px;
+}
+
+.left-container{
+    display: flex;
+    min-height: 60%;
+    min-width: 789px;
+    padding-right: 110px;
+    flex-direction: column;
+}
+
+.right-container{
+    display: flex;
+    min-height: 60%;
+    min-width: 260px;
+    border-left: 3px solid #000;
+    flex-direction: column;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 354px 354px;
+    grid-template-rows: 253px 253px;
+    grid-column-gap: 78px;
+    grid-row-gap: 32px;
+}
+
+.pad{
+    padding-left: 32px;
+}
+
+.title_2{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    padding-left: 33px;
+    color: #000000;
+}
+
+.title_3{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    padding-left: 33px;
+}
+
+.card_chanel{
+    border-radius: 10%;
+}
+
+.card_up{
+    background-color: #000;
+    border-radius: 20px 20px 0 0 ;
+    min-width: 359px;
+    min-height: 151px;
+}
+
+.card_down{
+    bottom: 1.51%;
+    min-width: 359px;
+    min-height: 61px;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.25), inset -4px -4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 20px 20px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3%;
+}
+
+.name{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+
+    /* color: #000000; */
+}
+
+.go-button{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background: #000000;
+    border-radius: 5px;
+    color:#FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.img_card{
+    border-radius: 20px 20px 0 0;
+    box-shadow: 6px 6px 30px rgba(0, 0, 0, 0.25), inset -4px -4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(to top, black -15%, transparent 90%);
 }
